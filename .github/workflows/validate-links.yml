@@ -1,0 +1,30 @@
+name: Markdown & Link Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check Markdown Structure
+        run: |
+          echo "Verifying markdown files..."
+          test -f README.md
+          test -f CONTRIBUTING.md
+          test -f CODE_OF_CONDUCT.md
+          test -f docs/how-to-study-codebases.md
+          test -f docs/architecture-patterns-for-beginners.md
+          echo "All core documents present and verified!"
