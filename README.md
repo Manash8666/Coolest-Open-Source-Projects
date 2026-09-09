@@ -23,6 +23,12 @@ Before diving into the codebases below, make sure to read our companion guides:
 
 - [💎 Hidden Engineering Marvels & Under-the-Radar Systems](#-hidden-engineering-marvels--under-the-radar-systems)
 - [🤖 Artificial Intelligence, Inference & Machine Learning](#-artificial-intelligence-inference--machine-learning)
+- [💳 Fintech & Core Banking Infrastructure](#-fintech--core-banking-infrastructure)
+- [📈 Trading App Tech & Execution Engines](#-trading-app-tech--execution-engines)
+- [⛓️ Blockchain & Web3 Infrastructure](#️-blockchain--web3-infrastructure)
+- [🛒 Headless Ecommerce & Marketplace Engines](#-headless-ecommerce--marketplace-engines)
+- [🏙️ Real Estate Tech (PropTech) & Digital Twins](#️-real-estate-tech-proptech--digital-twins)
+- [💍 Jewelry Tech, Precision CAD & Gemology](#-jewelry-tech-precision-cad--gemology)
 - [📈 Marketing, Growth & Web Analytics](#-marketing-growth--web-analytics)
 - [💼 Sales, CRM & Customer Operations](#-sales-crm--customer-operations)
 - [💰 Invoicing, Accounting & Double-Entry Systems](#-invoicing-accounting--double-entry-systems)
@@ -85,6 +91,86 @@ Production AI architectures showing model serving, retrieval-augmented generatio
 | **[Flowise](https://github.com/FlowiseAI/Flowise)** | `TypeScript`, `Node.js`, `React` | Drag-and-drop visual UI to construct and deploy customized LLM chains and agents. | Learn how visual graph execution engines are built on React Flow and evaluated on Node backends. |
 | **[LocalAI](https://github.com/mudler/LocalAI)** | `Go`, `C++` | Drop-in OpenAI-compatible REST API daemon executing local CPU/GPU inferencing. | Master API adapter patterns, binary lifecycle management, and gRPC backends. |
 | **[Transformers](https://github.com/huggingface/transformers)** | `Python`, `PyTorch` | State-of-the-art machine learning architectures for text, vision, and audio models. | Study software engineering at scale in deep learning: dynamic configuration, modular models, and hardware backends. |
+
+---
+
+## 💳 Fintech & Core Banking Infrastructure
+
+Production-grade payment routers, transaction switches, core banking engines, and programmable ledgers.
+
+| Project | Primary Stack | Core Description | Why Junior Devs Should Study It |
+| :--- | :--- | :--- | :--- |
+| **[Hyperswitch](https://github.com/juspay/hyperswitch)** | `Rust`, `PostgreSQL`, `Redis` | High-throughput payment routing switch processing transactions across hundreds of processors with sub-second routing. | Master asynchronous Rust, payment state-machine pipelines, circuit breakers, and zero-downtime card tokenization. |
+| **[Formance Stack](https://github.com/formancehq/stack)** | `Go`, `PostgreSQL` | Programmable money and multi-asset financial ledger engine powered by the Numscript DSL. | Learn how complex financial settlement flows (escrow, payouts, fees) are modeled as declarative double-entry ledger transactions. |
+| **[Apache Fineract](https://github.com/apache/fineract)** | `Java`, `Spring Boot`, `MySQL` | Enterprise core banking system supporting deposit accounts, loan origination, interest amortization, and KYC. | Benchmark for enterprise banking architectures: interest calculation schedules, currency rounding rules, and regulatory audit logging. |
+| **[Moov ACH](https://github.com/moov-io/ach)** | `Go` | Industry-standard NACHA ACH banking rail parser, builder, and validator used by fintech institutions. | Exceptional study of strict binary/fixed-width file format parsing, Luhn algorithms, and checksum validation routines in Go. |
+
+---
+
+## 📈 Trading App Tech & Execution Engines
+
+Algorithmic trading platforms, real-time market data pipelines, order books, and protocol connectors.
+
+| Project | Primary Stack | Core Description | Why Junior Devs Should Study It |
+| :--- | :--- | :--- | :--- |
+| **[Nautilus Trader](https://github.com/nautechsystems/nautilus_trader)** | `Rust`, `Python`, `Cython` | Institutional-grade, event-driven algorithmic trading engine and backtesting system engineered for nanosecond latency. | Master hybrid Rust/Python architectures, high-frequency tick data serialization, and event-driven order book reconstruction. |
+| **[CCXT](https://github.com/ccxt/ccxt)** | `JavaScript`, `Python`, `PHP`, `C#` | Universal exchange trading library connecting to over 100 market venues for spot, futures, and order book streaming. | Study automated multi-language transpilation, WebSocket connection multiplexing, and uniform error classification across disparate APIs. |
+| **[Hummingbot](https://github.com/hummingbot/hummingbot)** | `Python`, `Cython`, `C++` | High-frequency algorithmic market-making and arbitrage bot orchestrating cross-exchange trade execution. | Learn market-making mathematical strategies (pure market making, cross-exchange arbitrage), order matching loops, and latency mitigation. |
+| **[Lean](https://github.com/QuantConnect/Lean)** | `C#`, `Python` | Comprehensive algorithmic trading engine providing multi-asset data feeds, portfolio optimization, and live execution. | Study modular trading architecture: data providers, execution models, risk management engines, and tick-by-tick simulation. |
+| **[QuickFIX/Go](https://github.com/quickfixgo/quickfix)** | `Go` | Open-source implementation of the Financial Information eXchange (FIX) protocol powering institutional securities trading. | Master institutional electronic trading protocol parsing, sequence number synchronization, and network session recovery. |
+
+---
+
+## ⛓️ Blockchain & Web3 Infrastructure
+
+Modular blockchain frameworks, high-speed execution clients, consensus engines, and smart contract development suites.
+
+| Project | Primary Stack | Core Description | Why Junior Devs Should Study It |
+| :--- | :--- | :--- | :--- |
+| **[Reth](https://github.com/paradigmxyz/reth)** | `Rust`, `MDBX` | High-performance, modular Ethereum execution client designed as an extensible SDK. | Outstanding showcase of modern Rust: zero-copy data deserialization, EVM opcode execution pipelines, and lightning-fast MDBX storage. |
+| **[Polkadot SDK / Substrate](https://github.com/paritytech/polkadot-sdk)** | `Rust`, `WebAssembly` | Modular framework for building custom, application-specific blockchains with deterministic WebAssembly runtimes. | Master blockchain runtime upgrades without hard forks, custom consensus plugins (BABE/GRANDPA), and state trie databases. |
+| **[Cosmos SDK](https://github.com/cosmos/cosmos-sdk)** | `Go`, `CometBFT` | Framework for building sovereign, interoperable proof-of-stake blockchains connected via IBC. | Understand module-based blockchain design, application state replication via CometBFT, and inter-blockchain communication (IBC). |
+| **[Foundry](https://github.com/foundry-rs/foundry)** | `Rust`, `Solidity` | Blazing-fast smart contract development, fuzzing, and testing framework written in Rust. | Learn property-based fuzz testing, symbolic execution, and in-memory EVM state rollback mechanics. |
+| **[Hyperledger Besu](https://github.com/hyperledger/besu)** | `Java`, `RocksDB` | Enterprise-grade Ethereum client for both public networks and private permissioned consortiums. | Study enterprise consensus protocols (QBFT, IBFT 2.0), private transaction enclaves, and zero-knowledge proof verification. |
+
+---
+
+## 🛒 Headless Ecommerce & Marketplace Engines
+
+Modular, API-first commerce platforms, multi-vendor architectures, and product catalog services.
+
+| Project | Primary Stack | Core Description | Why Junior Devs Should Study It |
+| :--- | :--- | :--- | :--- |
+| **[Medusa](https://github.com/medusajs/medusa)** | `TypeScript`, `Node.js`, `PostgreSQL` | Modular, headless commerce engine featuring isolated domain services and flexible workflow orchestration. | Benchmark for modern Node.js commerce: isolated transaction workflows, plugin architectures, and multi-warehouse inventory logic. |
+| **[Saleor](https://github.com/saleor/saleor)** | `Python`, `Django`, `GraphQL`, `PostgreSQL` | Headless, composable commerce platform powered natively by a GraphQL API. | Master production GraphQL schema architecture, multi-currency tax engines, and asynchronous webhook dispatching in Python. |
+| **[Vendure](https://github.com/vendure-ecommerce/vendure)** | `TypeScript`, `NestJS`, `GraphQL` | Modular headless commerce framework built upon NestJS and clean architectural boundaries. | Learn type-safe plugin extension systems, job queue worker patterns, and relational database abstraction in NestJS. |
+| **[Bagisto](https://github.com/bagisto/bagisto)** | `PHP`, `Laravel`, `Vue.js` | Modular e-commerce and multi-vendor marketplace framework with rich B2B capabilities. | Learn Laravel modular package development, multi-vendor commission splits, and localized catalog caching. |
+| **[PrestaShop](https://github.com/PrestaShop/PrestaShop)** | `PHP`, `Symfony`, `MySQL` | Widely adopted enterprise e-commerce platform powering hundreds of thousands of live storefronts. | Study large-scale monolithic catalog management, internationalization pipelines, and modular checkout hooks. |
+
+---
+
+## 🏙️ Real Estate Tech (PropTech) & Digital Twins
+
+Geospatial engines, 3D architectural renderers, and smart building semantic data models.
+
+| Project | Primary Stack | Core Description | Why Junior Devs Should Study It |
+| :--- | :--- | :--- | :--- |
+| **[MapLibre GL JS](https://github.com/maplibre/maplibre-gl-js)** | `TypeScript`, `WebGL` | Open-source WebGL vector tile mapping library for fast interactive property and parcel exploration. | Learn WebGL hardware-accelerated vector tile rendering, spatial GeoJSON clustering, and custom property boundary shaders. |
+| **[CesiumJS](https://github.com/CesiumGS/cesium)** | `JavaScript`, `WebGL` | 3D geospatial platform for rendering massive 3D city models, terrain elevation, and architectural digital twins. | Master 3D Tiles spatial data structures, photogrammetry mesh streaming, and camera coordinate transformations in browser space. |
+| **[OSM Buildings](https://github.com/OSMBuildings/OSMBuildings)** | `JavaScript`, `WebGL` | Real-time 3D web renderer for architectural building geometry and urban parcels from OpenStreetMap. | Study 2.5D/3D polygon extrusion from geospatial polygon data, sun shadow calculations, and real-time mesh generation. |
+| **[RealEstateCore](https://github.com/RealEstateCore/RealEstateCore)** | `OWL`, `RDF`, `JSON-LD` | Standardized semantic ontology for modeling buildings, spatial topologies, IoT telemetry, and property assets. | Understand semantic web graphs, RDF ontologies, and how enterprise PropTech models building hierarchies (Room -> Floor -> Building -> Campus). |
+
+---
+
+## 💍 Jewelry Tech, Precision CAD & Gemology
+
+Precision 3D modeling workbenches, parametric jewelry generators, gemological cutting algorithms, and alloy density calculators.
+
+| Project | Primary Stack | Core Description | Why Junior Devs Should Study It |
+| :--- | :--- | :--- | :--- |
+| **[JewelCraft](https://github.com/mrachinskiy/jewelcraft)** | `Python`, `Blender` | Specialized jewelry design suite for Blender generating gem cuts, prong settings, and volumetric metal estimations. | Master computational gemology: parametric stone facet generation, Boolean cutter operations, and volumetric alloy weight calculation (14K, 18K, 950 Platinum). |
+| **[OpenSCAD](https://github.com/openscad/openscad)** | `C++` | The programmatic solid 3D CAD modeler transforming textual code scripts into 3D geometric meshes. | Learn computational geometry: constructive solid geometry (CSG), polygon mesh triangulation, and parametric algorithmic ring design. |
+| **[FreeCAD](https://github.com/FreeCAD/FreeCAD)** | `C++`, `Python`, `OpenCASCADE` | Parametric 3D CAD modeler featuring precision geometric constraint solvers and technical STEP/IGES exports. | The definitive open-source mechanical CAD codebase: learn B-Rep (boundary representation) modeling, sketcher constraint solving, and Python macro scripting. |
 
 ---
 
@@ -328,16 +414,16 @@ Industrial-grade creative suites pushing the boundaries of 2D/3D graphics, motio
 
 Jump directly to projects written in your primary language:
 
-- **TypeScript / JavaScript**: [Twenty](#-sales-crm--customer-operations), [Cal.com](#-sales-crm--customer-operations), [PostHog](#-marketing-growth--web-analytics), [Novu](#-marketing-growth--web-analytics), [Dub.co](#-marketing-growth--web-analytics), [Strapi](#-content-management-systems-cms--headless-apis), [Payload CMS](#-content-management-systems-cms--headless-apis), [Shadcn UI](#-uiux-design-systems-infinite-canvases--prototyping), [NestJS](#backend-frameworks--concurrency-engines), [n8n](#-business-intelligence-workflow-automation--data-engineering), [Activepieces](#-business-intelligence-workflow-automation--data-engineering), [Hoppscotch](#developer-tooling-apis--code-inspection), [Outline](#documentation-builders--knowledge-graphs), [Docusaurus](#documentation-builders--knowledge-graphs).
-- **Python**: [FastAPI](#backend-frameworks--concurrency-engines), [LangChain](#-artificial-intelligence-inference--machine-learning), [LlamaIndex](#-artificial-intelligence-inference--machine-learning), [Txtai](#-artificial-intelligence-inference--machine-learning), [Mem0](#-artificial-intelligence-inference--machine-learning), [Zulip](#-team-chat-real-time-messaging--federation), [Baserow](#-business-intelligence-workflow-automation--data-engineering), [Mitmproxy](#-hidden-engineering-marvels--under-the-radar-systems), [Apache Superset](#-business-intelligence-workflow-automation--data-engineering), [Dagster](#-business-intelligence-workflow-automation--data-engineering), [Authentik](#identity-authentication--secrets-management), [Locust](#developer-tooling-apis--code-inspection).
-- **Go**: [PocketBase](#backend-as-a-service-baas--realtime-engines), [Ollama](#-artificial-intelligence-inference--machine-learning), [SeaweedFS](#-hidden-engineering-marvels--under-the-radar-systems), [Tailscale](#-hidden-engineering-marvels--under-the-radar-systems), [LiteFS](#-hidden-engineering-marvels--under-the-radar-systems), [Mattermost](#-team-chat-real-time-messaging--federation), [Listmonk](#-marketing-growth--web-analytics), [Gin](#backend-frameworks--concurrency-engines), [Traefik](#devops-cloud-platforms--self-hosting-paas), [Woodpecker CI](#cicd-build-systems--continuous-delivery).
-- **Rust**: [TigerBeetle](#-hidden-engineering-marvels--under-the-radar-systems), [SurrealDB](#databases-inverted-search--vector-stores), [Meilisearch](#databases-inverted-search--vector-stores), [Qdrant](#databases-inverted-search--vector-stores), [Axum](#backend-frameworks--concurrency-engines), [Lemmy](#-community-discussion--threaded-forums).
-- **Zig**: [TigerBeetle](#-hidden-engineering-marvels--under-the-radar-systems).
-- **C & C++**: [Dragonfly](#-hidden-engineering-marvels--under-the-radar-systems), [Whisper.cpp](#-hidden-engineering-marvels--under-the-radar-systems), [Llama.cpp](#-artificial-intelligence-inference--machine-learning), [DuckDB](#-business-intelligence-workflow-automation--data-engineering), [Blender](#️-graphic-design-video-compositing--creative-media), [Krita](#️-graphic-design-video-compositing--creative-media), [Olive Video Editor](#-hidden-engineering-marvels--under-the-radar-systems), [Bespoke Synth](#-hidden-engineering-marvels--under-the-radar-systems), [LMMS](#️-graphic-design-video-compositing--creative-media).
-- **Ruby**: [Discourse](#-community-discussion--threaded-forums), [Chatwoot](#-sales-crm--customer-operations), [Fat Free CRM](#-sales-crm--customer-operations).
-- **Java**: [Jenkins](#cicd-build-systems--continuous-delivery), [SonarQube](#developer-tooling-apis--code-inspection), [Signal Server](#-team-chat-real-time-messaging--federation), [Airbyte](#-business-intelligence-workflow-automation--data-engineering).
-- **PHP**: [Laravel-based systems (Invoice Ninja, Firefly III, Akaunting, Crater, Snipe-IT, Coolify)](#-invoicing-accounting--double-entry-systems), [WordPress](#-content-management-systems-cms--headless-apis), [Drupal](#-content-management-systems-cms--headless-apis), [Matomo](#-marketing-growth--web-analytics), [SuiteCRM](#-sales-crm--customer-operations), [Appwrite](#backend-as-a-service-baas--realtime-engines).
+- **TypeScript / JavaScript**: [Medusa](#-headless-ecommerce--marketplace-engines), [Vendure](#-headless-ecommerce--marketplace-engines), [Twenty](#-sales-crm--customer-operations), [Cal.com](#-sales-crm--customer-operations), [PostHog](#-marketing-growth--web-analytics), [Novu](#-marketing-growth--web-analytics), [Dub.co](#-marketing-growth--web-analytics), [Strapi](#-content-management-systems-cms--headless-apis), [Payload CMS](#-content-management-systems-cms--headless-apis), [Shadcn UI](#-uiux-design-systems-infinite-canvases--prototyping), [NestJS](#backend-frameworks--concurrency-engines), [n8n](#-business-intelligence-workflow-automation--data-engineering), [Activepieces](#-business-intelligence-workflow-automation--data-engineering), [Hoppscotch](#developer-tooling-apis--code-inspection), [MapLibre GL JS](#️-real-estate-tech-proptech--digital-twins), [CesiumJS](#️-real-estate-tech-proptech--digital-twins), [CCXT](#-trading-app-tech--execution-engines).
+- **Python**: [FastAPI](#backend-frameworks--concurrency-engines), [Saleor](#-headless-ecommerce--marketplace-engines), [LangChain](#-artificial-intelligence-inference--machine-learning), [LlamaIndex](#-artificial-intelligence-inference--machine-learning), [Txtai](#-artificial-intelligence-inference--machine-learning), [Mem0](#-artificial-intelligence-inference--machine-learning), [Zulip](#-team-chat-real-time-messaging--federation), [Baserow](#-business-intelligence-workflow-automation--data-engineering), [Mitmproxy](#-hidden-engineering-marvels--under-the-radar-systems), [Apache Superset](#-business-intelligence-workflow-automation--data-engineering), [Hummingbot](#-trading-app-tech--execution-engines), [JewelCraft](#-jewelry-tech-precision-cad--gemology).
+- **Rust**: [Hyperswitch](#-fintech--core-banking-infrastructure), [Reth](#️-blockchain--web3-infrastructure), [Polkadot SDK / Substrate](#️-blockchain--web3-infrastructure), [Foundry](#️-blockchain--web3-infrastructure), [Nautilus Trader](#-trading-app-tech--execution-engines), [TigerBeetle](#-hidden-engineering-marvels--under-the-radar-systems), [SurrealDB](#databases-inverted-search--vector-stores), [Meilisearch](#databases-inverted-search--vector-stores), [Qdrant](#databases-inverted-search--vector-stores), [Axum](#backend-frameworks--concurrency-engines), [Lemmy](#-community-discussion--threaded-forums).
+- **Go**: [Formance Stack](#-fintech--core-banking-infrastructure), [Moov ACH](#-fintech--core-banking-infrastructure), [QuickFIX/Go](#-trading-app-tech--execution-engines), [Cosmos SDK](#️-blockchain--web3-infrastructure), [PocketBase](#backend-as-a-service-baas--realtime-engines), [Ollama](#-artificial-intelligence-inference--machine-learning), [SeaweedFS](#-hidden-engineering-marvels--under-the-radar-systems), [Tailscale](#-hidden-engineering-marvels--under-the-radar-systems), [LiteFS](#-hidden-engineering-marvels--under-the-radar-systems), [Mattermost](#-team-chat-real-time-messaging--federation), [Listmonk](#-marketing-growth--web-analytics), [Gin](#backend-frameworks--concurrency-engines), [Traefik](#devops-cloud-platforms--self-hosting-paas).
+- **C & C++**: [OpenSCAD](#-jewelry-tech-precision-cad--gemology), [FreeCAD](#-jewelry-tech-precision-cad--gemology), [Dragonfly](#-hidden-engineering-marvels--under-the-radar-systems), [Whisper.cpp](#-hidden-engineering-marvels--under-the-radar-systems), [Llama.cpp](#-artificial-intelligence-inference--machine-learning), [DuckDB](#-business-intelligence-workflow-automation--data-engineering), [Blender](#️-graphic-design-video-compositing--creative-media), [Krita](#️-graphic-design-video-compositing--creative-media), [Olive Video Editor](#-hidden-engineering-marvels--under-the-radar-systems), [Bespoke Synth](#-hidden-engineering-marvels--under-the-radar-systems), [LMMS](#️-graphic-design-video-compositing--creative-media).
+- **Java**: [Apache Fineract](#-fintech--core-banking-infrastructure), [Hyperledger Besu](#️-blockchain--web3-infrastructure), [Jenkins](#cicd-build-systems--continuous-delivery), [SonarQube](#developer-tooling-apis--code-inspection), [Signal Server](#-team-chat-real-time-messaging--federation), [Airbyte](#-business-intelligence-workflow-automation--data-engineering).
+- **C#**: [Lean (QuantConnect)](#-trading-app-tech--execution-engines).
+- **PHP**: [Bagisto](#-headless-ecommerce--marketplace-engines), [PrestaShop](#-headless-ecommerce--marketplace-engines), [Invoice Ninja](#-invoicing-accounting--double-entry-systems), [Firefly III](#-invoicing-accounting--double-entry-systems), [Akaunting](#-invoicing-accounting--double-entry-systems), [WordPress](#-content-management-systems-cms--headless-apis), [Drupal](#-content-management-systems-cms--headless-apis), [Matomo](#-marketing-growth--web-analytics), [SuiteCRM](#-sales-crm--customer-operations), [Appwrite](#backend-as-a-service-baas--realtime-engines), [Coolify](#devops-cloud-platforms--self-hosting-paas).
 - **Elixir**: [Plausible Analytics](#-marketing-growth--web-analytics), [Supabase Realtime](#backend-as-a-service-baas--realtime-engines).
+- **Zig**: [TigerBeetle](#-hidden-engineering-marvels--under-the-radar-systems).
 
 ---
 
